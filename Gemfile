@@ -26,6 +26,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem "warbler"
+end
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'ruby-debug'
