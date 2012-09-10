@@ -9,6 +9,11 @@ gem 'activerecord-jdbcsqlite3-adapter'
 
 gem 'jruby-openssl'
 
+gem 'haml-rails'
+gem 'jquery-rails'
+
+gem 'trinidad', require: false
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -21,7 +26,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'ruby-debug'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -34,6 +42,3 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
