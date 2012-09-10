@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'jruby-jars', '~> 1.7.0.preview2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,7 +13,7 @@ gem 'jruby-openssl'
 gem 'haml-rails'
 gem 'jquery-rails'
 
-gem 'trinidad', require: false
+gem 'trinidad', :require => false
 
 # Gems used only for assets and not required
 # in production environments by default.
