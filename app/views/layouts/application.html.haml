@@ -4,7 +4,7 @@
   = csrf_meta_tags
   = stylesheet_link_tag "application", params[:controller], :media => "all"
 %body
-
+  = render :partial => "layouts/application_header"
   = yield
   = javascript_include_tag "application", params[:controller]
 
