@@ -25,6 +25,7 @@ group :assets do
   gem 'therubyrhino'
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass'
 end
 
 group :development do
