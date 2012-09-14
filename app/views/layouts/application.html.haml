@@ -1,0 +1,10 @@
+!!! 5
+%head
+  %title JrubyHello
+  = csrf_meta_tags
+  = stylesheet_link_tag "application", params[:controller], :media => "all"
+%body
+
+  = yield
+  = javascript_include_tag "application", params[:controller]
+
