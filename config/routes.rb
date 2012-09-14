@@ -1,5 +1,6 @@
 JrubyHello::Application.routes.draw do
   get "examples/index"
+  get "count/index"
   root :to => 'examples#index'
 
   # The priority is based upon order of creation:
