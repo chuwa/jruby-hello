@@ -47,3 +47,5 @@ end
 
 # Deploy with Capistrano
 # gem 'capistrano'
+
+gem "torquebox", "2.1.2"

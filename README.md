@@ -42,6 +42,30 @@ package:
 
 one jruby-hello.war package will be generated in the root directory, which can later be copied to the java web app container to finish the deployment.
 
+----
 
+# Torquebox
+## install torquebox
+```
+gem install torquebox
+```
+start torquebox container
+```
+torquebox run
+```
+## deploy rails app
+```
+torquebox deploy
+```
+go to *http://localhost:8080*
+## generate torquebox configuration
+```
+rake rails:template LOCATION=`torquebox env TORQUEBOX_HOME`/share/rails/template.rb
+```
+## add backstage management console
+```
+gem install torquebox-backstage
+TORQUEBOX_HOME=`torquebox env torquebox_home` backstage deploy
+```
+go to *http://localhost:8080/backstage*
 
-    
